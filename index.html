@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <!-- Link to Bootstrap-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--Link to CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+  <!--Link to jquery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!--Title and start button-->
+    <div class="container">
+        <div class="panel panel-default" id="mainEvent">
+            <h1 id="triviaTitle">SpongeBob Trivia</h1>
+            <button class="btn btn-default btn-lg center-block" id="startGame">
+                Start
+            </button>
+            
+            <!--Placeholder for timer-->
+            <h2 id="timer"></h2> 
+
+            <br>
+
+            <!--Placeholder for triva questions-->
+            <h2 id="trivia1"></h2>
+            <section class="center-block" id="response1">
+                <form id="response1a">
+                </form>
+            </section>
+
+            <br>
+
+            <h2 id="trivia2"></h2>
+            <section class="center-block" id="response2">
+                <form id="response2a">
+                </form>
+            </section>
+
+            <br>
+
+            <h2 id="trivia3"></h2>
+            <section class="center-block" id="response3">
+                <form id="response3a">
+                </form>
+            </section>
+
+            <br>
+
+            <h2 id="trivia4"></h2>
+            <section class="center-block" id="response4">
+                <form id="response4a">
+                </form>
+            </section>
+
+            <br>
+
+            <h2 id="trivia5"></h2>
+            <section class="center-block" id="response5">
+                <form id="response5a">
+                </form>
+            </section>
+
+            <br>
+
+            <!--Placeholders for game stats-->
+            <section class="center-block">
+                <h2 id="Finished"></h2>
+                <br>
+                <h3 id="correct"></h3>
+                <h3 id="incorrect"></h3>
+
+            </section>
+
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <!--Link to JS-->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</footer>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/spongebob.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.container {
+    text-align: center;
+}
+
+#mainEvent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(255,243,89);
+    color: black;
+    font-family: 'Coiny', cursive;
+    height: auto;
+    border: none;
+}
+
+form {
+    color: black;
+}
+
+#triviaTitle {
+    text-align: center;
+    font-size: 450%;
+    padding-bottom: 40px;
+    color: turquoise
+}
+
+#startGame {
+    width: 20%;
+    color: turquoise;
+    font-size: 50px;
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 10px;
+}
+
+label {
+    font-size: 150%;
+}
