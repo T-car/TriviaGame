@@ -22,6 +22,7 @@ function decrement() {
         stop();
         finalScore(); //erases the contents of page and replaces them with game stats
     }
+    console.log (timeRemaining);
 }
 function stop() {
     clearInterval(intervalId);
@@ -37,6 +38,8 @@ function finalScore() {
     $(addStats[0]).html("Finished!");
     $(addStats[1]).html("Correct Answers: " + correct);
     $(addStats[2]).html("Incorrect Answers: " + incorrect);
+    console.log(correct);
+    console.log(incorrect);
 }
 //Checks players responses and adds to correct and incorrect totals
 //change the trigger event for each radio button
@@ -47,6 +50,7 @@ $(document).on('change', 'input[type=radio][name=response1a]', function () {
     else {
         incorrect++;
     }
+    console.log(this);
 });
 $(document).on('change', 'input[type=radio][name=response2a]', function () {
     if (this.value == "Bikini Bottom" && this.checked) {
@@ -87,6 +91,7 @@ function triviaQuestions() {
     $("#trivia3").html("What is the name of Spongebob's pet?");
     $("#trivia4").html("Who is Spongebob's neighbor?");
     $("#trivia5").html("Who is Spongebob's best friend?");
+    console.log(triviaQuestions)
 }
 //triva responses to appear in placeholders in html
 function triviaResponses() {
@@ -118,6 +123,7 @@ function triviaResponses() {
         _input.val(answers5[i]);
         $("#response5a").append(_input)
     }
+    console.log(answers1)
 }
 $("#startGame").click(function () {
     $("#startGame").remove();
